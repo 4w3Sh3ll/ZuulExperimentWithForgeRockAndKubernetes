@@ -1,0 +1,18 @@
+{
+  "id" : "656f9f78-3740-4f1f-8dbc-0298468d5186",
+  "request" : {
+    "urlPath" : "/hurrdurr/test",
+    "method" : "GET",
+    "queryParameters" : {
+      "isItTrue" : {
+        "equalTo" : "true"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "true",
+    "transformers" : [ "response-template" ]
+  },
+  "uuid" : "656f9f78-3740-4f1f-8dbc-0298468d5186"
+}

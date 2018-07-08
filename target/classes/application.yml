@@ -1,0 +1,25 @@
+server:
+  port: 8081
+################################################################################
+zuul:
+  ignoredPatterns: /hurrdurr/**
+  routes:
+    google:
+      url: http://google.com/
+    login: 
+      url: ${ENV_LOGIN_URL:http://localhost:8083/login}
+      strip-prefix: true
+    static:
+      path: ${ENV_UI_STATIC_PATH:/**} #sample environment variable injection for some zuul route matching static content serving
+      url: ${ENV_UI_STATIC_VAR:http://localhost:8083/} #actual url mapping
+      strip-prefix: true
+      
+###############################################################################
+#Sample ForgeRock mapping
+#This matches whatever is et inside deployment.yml file
+#The deployment.yml file contains the required parametrization to online the instance of the docker image inside Kubernetes
+#Values inside deployment.yml file are injected from the values.yaml file
+#This is to show the parametrization chaining in the case of using Helm and Charts
+forgerock:
+  url: ${FORGEROCK_ADDRESS}
+  realm: ${FORGEROCK_REALM}

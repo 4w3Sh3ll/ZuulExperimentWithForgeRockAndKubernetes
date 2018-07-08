@@ -1,0 +1,18 @@
+{
+  "id" : "dd317e10-0055-4a3d-8115-6db31ae74a1c",
+  "request" : {
+    "urlPath" : "/hurrdurr/test",
+    "method" : "GET",
+    "queryParameters" : {
+      "isItTrue" : {
+        "equalTo" : "true"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "true",
+    "transformers" : [ "response-template" ]
+  },
+  "uuid" : "dd317e10-0055-4a3d-8115-6db31ae74a1c"
+}

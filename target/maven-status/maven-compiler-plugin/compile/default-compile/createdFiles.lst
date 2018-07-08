@@ -1,0 +1,12 @@
+gateway\sample\config\AppStart.class
+gateway\sample\util\MessageReaderUtils.class
+gateway\sample\messanging\MessagingService.class
+gateway\sample\config\GatewayLoggingFactory.class
+gateway\sample\filters\LoginFilter.class
+gateway\sample\util\GatewayParametrizationSupport.class
+gateway\sample\util\StaticValues.class
+gateway\sample\util\AddressBuilder.class
+gateway\sample\filters\ExecutionFilter.class
+gateway\sample\controller\IngnoredController.class
+gateway\sample\config\GatewayConfiguration.class
+gateway\sample\messanging\ForgeRockMessagingService.class

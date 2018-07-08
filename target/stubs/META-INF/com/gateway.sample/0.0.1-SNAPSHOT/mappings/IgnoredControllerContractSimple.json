@@ -1,0 +1,12 @@
+{
+  "id" : "e9ebe0d7-a820-4891-9401-67af2af1c1e8",
+  "request" : {
+    "url" : "/hurrdurr/test",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "transformers" : [ "response-template" ]
+  },
+  "uuid" : "e9ebe0d7-a820-4891-9401-67af2af1c1e8"
+}
